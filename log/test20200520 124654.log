@@ -1,0 +1,5 @@
+2020-05-20 12:46:55,154 INFO [IHRM_Department.py(test_01_login:20)] - 返回数据为：{'success': True, 'code': 10000, 'message': '操作成功！', 'data': 'c19af5a3-06e2-41c5-b2cf-166c29abf562'}
+2020-05-20 12:46:55,293 INFO [IHRM_Department.py(test_02_add_department:32)] - 返回数据为：{'success': True, 'code': 10000, 'message': '操作成功！', 'data': {'id': '1262968108079984640'}}
+2020-05-20 12:46:55,423 INFO [IHRM_Department.py(test_03_check_department:42)] - 返回数据为：{'success': True, 'code': 10000, 'message': '操作成功！', 'data': {'id': '1262968108079984640', 'pid': None, 'companyId': '1', 'name': '王者荣耀开发部', 'code': '12138', 'managerId': None, 'manager': '李白', 'introduce': '你在吗，你会一直在吗', 'createTime': None}}
+2020-05-20 12:46:55,553 INFO [IHRM_Department.py(test_04_put_department:52)] - 返回数据为：{'success': True, 'code': 10000, 'message': '操作成功！', 'data': None}
+2020-05-20 12:46:55,684 INFO [IHRM_Department.py(test_05_delete_department:62)] - 返回数据为：{'success': True, 'code': 10000, 'message': '操作成功！', 'data': None}
