@@ -10,7 +10,7 @@ import time
 
 Headers = None
 depat_id = None
-
+Public_Path = os.path.dirname(os.path.abspath(__file__))
 
 # 生成日志
 def get_department_log():
@@ -20,7 +20,7 @@ def get_department_log():
     # 创建输出到控制台
     ls = logging.StreamHandler()
     # 创建输出到文件中，并设置当前执行文件目录地址
-    filename = os.path.dirname(os.path.abspath(__file__)) + "/log/test.log"
+    filename = Public_Path + "/log/test.log"
     path = logging.handlers.TimedRotatingFileHandler(filename=filename,when="midnight",interval=5,
                                                      backupCount=2,encoding="utf-8")
     # 创建格式化器，设置输出什么什么内容，以什么格式进行输出
