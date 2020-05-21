@@ -31,7 +31,9 @@ class IHRMDepart(unittest.TestCase):
         app.Headers = {"Content-Type": "application/json", "Authorization": token}
 
     # 添加部门，利用参数化
-    @parameterized.expand(get_departement_json("../data/dapaetment_data", "add_depart"))
+    filename = app.Public_Path + "/data/dapaetment_data"
+
+    @parameterized.expand(get_departement_json(filename, "add_depart"))
     def test_02_add_department(self, name, code, manager, introduce, httpcode, success, code1, message):
         print("name={},code={},manager={},introduce={}".format(name, code, manager, introduce))
         response_add = self.depart_api.add_department(app.Headers, name, code, manager, introduce)
@@ -44,7 +46,7 @@ class IHRMDepart(unittest.TestCase):
         app.depat_id = response_add.json().get("data").get("id")
 
     # 查看添加的部门,实现参数化
-    @parameterized.expand(get_departement_json("../data/dapaetment_data", "check_depart"))
+    @parameterized.expand(get_departement_json(filename, "check_depart"))
     def test_03_check_department(self, httpcode, success, code1, message):
         response_check = self.depart_api.check_department(app.Headers, app.depat_id)
         # 打印日志
@@ -54,7 +56,7 @@ class IHRMDepart(unittest.TestCase):
         assert_test(httpcode, success, code1, message, response_check, self)
 
     # 修改部门
-    @parameterized.expand(get_departement_json("../data/dapaetment_data", "put_depart"))
+    @parameterized.expand(get_departement_json(filename, "put_depart"))
     def test_04_put_department(self, name, code, manager, introduce, httpcode, success, code1, message):
         # 修改的数据
         json = {"name": name, "code": code, "manager": manager, "introduce": introduce}
@@ -68,7 +70,7 @@ class IHRMDepart(unittest.TestCase):
         assert_test(httpcode, success, code1, message, response_put, self)
 
     # 删除部门
-    @parameterized.expand(get_departement_json("../data/dapaetment_data", "delete_depart"))
+    @parameterized.expand(get_departement_json(filename, "delete_depart"))
     def test_05_delete_department(self, httpcode, success, code1, message):
         response_del = self.depart_api.delete_department(app.Headers, app.depat_id)
         # 打印日志

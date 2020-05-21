@@ -1,0 +1,10 @@
+2020-05-20 14:34:05,785 INFO [IHRM_Department.py(test_01_login:22)] - 返回数据为：{'success': True, 'code': 10000, 'message': '操作成功！', 'data': 'f2abe9e8-b616-45c2-911a-738fa4a03fa9'}
+2020-05-20 14:34:06,003 INFO [IHRM_Department.py(test_02_add_department:36)] - 返回数据为：{'success': True, 'code': 10000, 'message': '操作成功！', 'data': {'id': '1262995080923394048'}}
+2020-05-20 14:34:06,143 INFO [IHRM_Department.py(test_03_check_department:48)] - 返回数据为：{'success': True, 'code': 10000, 'message': '操作成功！', 'data': {'id': '1262995080923394048', 'pid': None, 'companyId': '1', 'name': '剑来，飞天', 'code': '1314', 'managerId': None, 'manager': '关羽', 'introduce': '临兵斗者且阵列前行', 'createTime': None}}
+2020-05-20 14:34:06,553 INFO [IHRM_Department.py(test_04_put_department:60)] - 返回数据为：{'success': True, 'code': 10000, 'message': '操作成功！', 'data': None}
+2020-05-20 14:34:06,683 INFO [IHRM_Department.py(test_05_delete_department:72)] - 返回数据为：{'success': True, 'code': 10000, 'message': '操作成功！', 'data': None}
+2020-05-20 14:39:32,662 INFO [IHRM_Department.py(test_01_login:22)] - 返回数据为：{'success': True, 'code': 10000, 'message': '操作成功！', 'data': 'c319eb9b-545b-459f-9f7d-cc8955323ff6'}
+2020-05-20 14:39:32,822 INFO [IHRM_Department.py(test_02_add_department:36)] - 返回数据为：{'success': True, 'code': 10000, 'message': '操作成功！', 'data': {'id': '1262996451730993152'}}
+2020-05-20 14:39:32,961 INFO [IHRM_Department.py(test_03_check_department:48)] - 返回数据为：{'success': True, 'code': 10000, 'message': '操作成功！', 'data': {'id': '1262996451730993152', 'pid': None, 'companyId': '1', 'name': '剑来，飞天', 'code': '1314', 'managerId': None, 'manager': '关羽', 'introduce': '临兵斗者且阵列前行', 'createTime': None}}
+2020-05-20 14:39:33,092 INFO [IHRM_Department.py(test_04_put_department:60)] - 返回数据为：{'success': True, 'code': 10000, 'message': '操作成功！', 'data': None}
+2020-05-20 14:39:33,232 INFO [IHRM_Department.py(test_05_delete_department:72)] - 返回数据为：{'success': True, 'code': 10000, 'message': '操作成功！', 'data': None}

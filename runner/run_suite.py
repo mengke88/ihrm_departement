@@ -13,5 +13,6 @@ suite = unittest.TestSuite()
 # 3.添加测试类
 suite.addTest(unittest.makeSuite(IHRMDepart))
 # 4.利用beatuifulReport生成测试报告
-filename = "depaetment_report{}".format(time.strftime("%Y-%m-%d %H%M%S"))
+# filename = "depaetment_report{}".format(time.strftime("%Y-%m-%d %H%M%S"))
+filename = "report.html"
 BeautifulReport(suite).report(filename=filename, description="IHRM部门系统测试报告", log_path="../report")
